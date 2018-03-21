@@ -1,0 +1,19 @@
+<ion-view hide-tabs="true">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button class=" button button-smallbutton-calm">
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div style="padding-left: 10px;padding-right: 10px;">
+            <h3>{{data.data.title}}</h3>
+            <p style="color:grey;">{{data.data.time}}</p>
+            <audio ng-src="{{data.url}}" controls ></audio>
+            <div>
+                <img src="{{data.data.imgUrl}}"/>
+                <p style="font-size:15px;line-height: 28px;text-indent: 2em;">{{data.data.content}}</p>
+            </div>
+        </div>
+    </ion-content>
+
+
+</ion-view>

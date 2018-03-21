@@ -1,0 +1,24 @@
+<ion-view title="基本陈列">
+    <ion-nav-bar class="bar-positive">
+        <ion-scroll  scrollbar-x="false" direction="x" class="bar bar-subheader">
+                  <div>
+                      <div class="button button-clear button-positive aboutPb" ng-repeat="nav in data.nav" ng-click="data.toPath(nav)">{{nav}}</div>
+                  </div>
+        </ion-scroll>
+    </ion-nav-bar>
+    <ion-content>
+        <div  class="sameDiv">
+            <img src="{{data.headNav.imgUrl}}" alt=""  ng-click="mine.goPath(data.headNav.pbdisplayID)">
+        <!--内容区-->
+        <div class="list" style="position:relative;top:-70px;">
+            <div>
+                <a class="item item-thumbnail-left" ng-repeat="data in data.data"  ng-click="mine.goPath(data.pbdisplayID)">
+                    <img class="navImg" ng-src="{{data.imgUrl}}" alt="">
+                    <h2>{{data.title}}</h2>
+                    <p>{{data.time}}</p>
+                </a>
+            </div>
+        </div>
+        </div>
+    </ion-content>
+</ion-view>

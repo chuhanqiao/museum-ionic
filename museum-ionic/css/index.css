@@ -1,0 +1,28 @@
+.tab-nav{
+    height:75px;
+}
+.sameDiv{
+    padding-top:43px;
+    padding-bottom:30px;
+}
+/*导航条*/
+.bar > div {
+    width:100%;
+}
+.aboutPb {
+    width:calc(100%/4);
+}
+.enterPb{
+    width:calc(100%/2);
+}
+img{
+    width:100%;
+}
+form>input{
+    border:1px solid grey;
+    width:80%;
+    height:50px;
+}
+/*
+*注册界面
+*/

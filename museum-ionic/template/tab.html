@@ -1,0 +1,18 @@
+<ion-view>
+
+<ion-tabs class="tabs-positive tabs-icon-only" ng-class="{'tabs-item-hide': $root.hideTabs}">
+
+    <ion-tab title="了解平博" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/home">
+        <ion-nav-view name="tab-home">
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="走进平博" icon-on="ion-social-buffer-outline" icon-off="ion-social-buffer" href="#/tab/museum">
+        <ion-nav-view name="tab-museum"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="我与平博" icon-off="ion-social-github-outline" icon-on="ion-social-github" href="#/tab/mine">
+        <ion-nav-view name="tab-mine"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
+</ion-view>
